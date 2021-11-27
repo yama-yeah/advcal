@@ -8,13 +8,13 @@ void showAlert(BuildContext context) {
       print(isAllowed);
       Alert(
         context: context,
-        type: AlertType.error,
+        type: AlertType.warning,
         title: "通知の設定",
         desc: "通知を有効にしてください",
         buttons: [
           DialogButton(
             child: Text(
-              "COOL",
+              "OK",
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
             onPressed: () {
